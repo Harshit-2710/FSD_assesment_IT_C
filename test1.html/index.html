@@ -14,9 +14,17 @@
        <label for="quantity">Quantity:</label>
        <input type="number" id="quantity" value="1" min="1">
        <p id="total-price">Total Price: Rs. 15</p>
-       <button id="buy-now">Buy Now</button>
+       <button type="submit" onclick="show_result()">Buy Now</button>
 
     </div>
 </center>
+<script>
+   var quantity=document.getElementById("quantity").value;
+   var cost=quantity*15;
+   function show_result()
+   {
+    alert("Thankyou for your purchase of "+quantity+" items for Rs."+cost);
+   }
+</script>
 </body>
 </html>
